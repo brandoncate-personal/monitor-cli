@@ -1,0 +1,28 @@
+runner: go
+tests:
+- name: Example Success 1
+  test:
+    dir: /home/user/home/brandon/workspace/go-testing-framework/cmd/exe/data/
+    file: tests.go
+    name: Test_Pass
+  schedule:
+    every:
+      seconds: 5    
+- name: Example Fail 1
+  test:
+    dir: /home/user/home/brandon/workspace/go-testing-framework/cmd/exe/data/
+    file: tests.go
+    name: Test_Fail
+  schedule:
+    every:
+      seconds: 10    
+- name: Example Random 1
+  test:
+    dir: /home/user/home/brandon/workspace/go-testing-framework/cmd/exe/data/
+    file: tests.go
+    name: Test_Random
+  schedule:
+    every:
+      seconds: 3    
+export:
+  http: http://localhost:3000/injest

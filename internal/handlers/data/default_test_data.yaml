@@ -1,0 +1,11 @@
+tests:
+- name: Example Success 1
+  test:
+    dir: /home/user/home/brandon/workspace/go-testing-framework/cmd/reflection/tests 
+    file: example_test.go
+    name: TestCase1
+  schedule:
+    every:
+      seconds: 3    
+export:
+  http: http://localhost:3000/injest
