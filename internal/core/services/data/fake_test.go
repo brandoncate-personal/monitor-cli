@@ -1,4 +1,4 @@
-package faketests
+package data
 
 import (
 	"log"
