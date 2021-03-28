@@ -1,11 +1,9 @@
 name: Release Go project
 
-on: push
-
-# on:
-#   push:
-#     tags:
-#       - "v*" # triggers only if push new tag version, like `0.8.4` or else
+on:
+  push:
+    tags:
+      - "v*" # triggers only if push new tag version, like `v0.8.4` or else
 
 jobs:
   build:
