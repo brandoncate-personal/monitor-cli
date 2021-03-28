@@ -9,9 +9,9 @@ import (
 func Test_TestRunnerFactory_Go_Success(t *testing.T) {
 
 	test := domain.Test{
-		Dir:  "faketests",
-		File: "go_fake_test.go",
-		Name: "TestCase1",
+		Dir:  "data",
+		File: "fake_test.go",
+		Name: "Test_Pass",
 	}
 
 	goTestRunner, err := NewTestRunner(Go, nil)
