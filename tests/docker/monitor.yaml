@@ -1,0 +1,12 @@
+runner: go
+tests:
+- name: Example Success 1
+  test:
+    dir: .
+    file: main_test.go
+    name: Test_Basic_Strapi_Get
+  schedule:
+    every:
+      seconds: 5    
+export:
+  http: http://localhost:3000/injest
