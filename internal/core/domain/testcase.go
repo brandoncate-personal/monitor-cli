@@ -10,6 +10,7 @@ const (
 )
 
 type TestResults struct {
+	Name       string
 	StatusCode TestStatusCode
 	Stdout     string
 	Stderr     string

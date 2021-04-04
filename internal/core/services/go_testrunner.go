@@ -44,6 +44,7 @@ func (testRunner GoTestRunner) Run(test domain.Test) (domain.TestResults, error)
 	if err == nil {
 		// Test ran without any problems, return json
 		return domain.TestResults{
+			Name:       test.Name,
 			StatusCode: domain.OK,
 			Stdout:     stdout.String(),
 			Stderr:     stderr.String(),
@@ -61,6 +62,7 @@ func (testRunner GoTestRunner) Run(test domain.Test) (domain.TestResults, error)
 	case 1:
 		// `go test` returns 1 when tests fail, this is fine
 		return domain.TestResults{
+			Name:       test.Name,
 			StatusCode: domain.ERROR,
 			Stdout:     stdout.String(),
 			Stderr:     stderr.String(),
@@ -71,6 +73,7 @@ func (testRunner GoTestRunner) Run(test domain.Test) (domain.TestResults, error)
 			testCmd.String(), exc, err,
 		)
 		return domain.TestResults{
+			Name:       test.Name,
 			StatusCode: domain.ERROR,
 			Stdout:     stdout.String(),
 			Stderr:     stderr.String(),
@@ -81,6 +84,7 @@ func (testRunner GoTestRunner) Run(test domain.Test) (domain.TestResults, error)
 		)
 	}
 	return domain.TestResults{
+		Name:       test.Name,
 		StatusCode: domain.INTERNAL_ERROR,
 		Stdout:     stdout.String(),
 		Stderr:     stderr.String(),
