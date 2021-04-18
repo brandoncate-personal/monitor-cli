@@ -20,4 +20,4 @@ release-gen:
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-w /go/src/github.com/user/repo \
 	-e GITHUB_TOKEN=$(GITHUB_TOKEN) \
-	goreleaser/goreleaser release --rm-dist
+	goreleaser/goreleaser --snapshot --skip-publish --rm-dist
