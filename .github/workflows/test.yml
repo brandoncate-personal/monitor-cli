@@ -33,4 +33,4 @@ jobs:
     
     ## runs go test ./...
     - name: Test
-      run: go test -coverprofile=coverage.out -covermode=count $(go list ./... | grep -v /data)
+      run: go test $(go list ./... | grep -v /data)
