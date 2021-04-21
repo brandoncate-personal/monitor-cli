@@ -3,7 +3,7 @@ name: Test Across Matrix
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:
