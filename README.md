@@ -1,4 +1,8 @@
 
-[![CI Status](https://github.com/brandoncate-personal/monitor-cli/actions?workflow=Tests)](https://github.com/brandoncate-personal/monitor-cli/actions?workflow=test)
+[![Build Status][ci-image]][ci-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
-[![Coverage Status](https://coveralls.io/repos/github/brandoncate-personal/monitor-cli/badge.svg?branch=main)](https://coveralls.io/github/brandoncate-personal/monitor-cli?branch=main)
+[ci-image]: https://github.com/brandoncate-personal/monitor-cli/workflows/Tests/badge.svg
+[ci-url]: https://github.com/brandoncate-personal/monitor-cli/actions?workflow=Tests
+
+[coveralls-image]: https://coveralls.io/repos/github/brandoncate-personal/monitor-cli/badge.svg?branch=master&service=github
+[coveralls-url]: https://coveralls.io/repos/github/brandoncate-personal/monitor-cli?branch=master
