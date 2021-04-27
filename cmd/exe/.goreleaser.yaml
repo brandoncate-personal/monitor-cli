@@ -1,6 +1,7 @@
-project_name: go-testing-framework
+project_name: monitor-cli
 builds:
   - env: [CGO_ENABLED=0]
+    binary: monitor
     goos:
       - linux
       - windows
